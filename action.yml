@@ -1,7 +1,10 @@
 name: Autograding
-description: "Autograding for GitHub Classroom"
-author: "@github"
+description: "Autograding for GoRace"
+author: "@gorace-ull"
 inputs:
+  activity:
+    description: The GoRace activity associated to the repsoitory.
+    required: true
   token:
     description: >
       GitHub token used to check repository content and provide feedback. By default, 
