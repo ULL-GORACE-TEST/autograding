@@ -268,7 +268,10 @@ export const runAll = async (tests: Array<Test>, cwd: string): Promise<void> => 
 
   // Set the number of points
   if (hasPoints) {
-    const output = { activty: core.getInput('activity'), results }
+    const activity = core.getInput('activity')
+    const assigmentId = parseInt(core.getInput('assigmentId'))
+    const classroomId = parseInt(core.getInput('classroomId'))
+    const output = { activity, assigmentId, classroomId, results }
     const outputStr = JSON.stringify(output)
     const text = `Points ${points}/${availablePoints}`
     log(color.bold.bgCyan.black(text))
