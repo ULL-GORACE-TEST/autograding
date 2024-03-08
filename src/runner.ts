@@ -271,7 +271,8 @@ export const runAll = async (tests: Array<Test>, cwd: string): Promise<void> => 
     const activity = core.getInput('activity')
     const assigmentId = parseInt(core.getInput('assigmentId'))
     const classroomId = parseInt(core.getInput('classroomId'))
-    const output = { activity, assigmentId, classroomId, results }
+    const race = core.getInput("race")
+    const output = { activity, assigmentId, classroomId, race, results }
     const outputStr = JSON.stringify(output)
     const text = `Points ${points}/${availablePoints}`
     log(color.bold.bgCyan.black(text))
