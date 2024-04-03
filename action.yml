@@ -8,9 +8,6 @@ inputs:
   assigmentId:
     description: The ID of the assigment in GH Classroom.
     required: true
-  classroomId:
-    description: The ID of the classroom in GH Classroom.
-    required: true
   race:
     description: The name of the race in gh2gr server.
     required: true
